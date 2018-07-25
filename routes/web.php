@@ -14,4 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/profile', 'ProfileController@getName');
+Route::get('/profile', 'ProfileController@detail');

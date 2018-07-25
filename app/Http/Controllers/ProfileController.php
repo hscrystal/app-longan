@@ -8,6 +8,6 @@ class ProfileController extends Controller
 {
     function detail ()
     {
-	return "WebBookThai";
+	return "Hs-Network";
     }
 }

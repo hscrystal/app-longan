@@ -14,4 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user', function () {
+    return "Hscrystaleng";
+});
+
 Route::get('/profile', 'ProfileController@detail');

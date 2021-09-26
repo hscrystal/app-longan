@@ -26,7 +26,10 @@ WORKDIR /var/www/laravel
 # Copy Directory Laravel
 ADD app /var/www/laravel
 
-# Run Composer install
+# Change www-data to Directory
+RUN chown -R www-data:www-data /var/www/laravel
+
+# Install and Run Composer install
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install
 

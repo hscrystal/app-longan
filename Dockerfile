@@ -24,7 +24,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 WORKDIR /var/www/laravel
 
 # Copy Directory Laravel
-ADD app /var/www/laravel
+ADD laravel /var/www/laravel
 
 # Change www-data to Directory
 RUN chown -R www-data:www-data /var/www/laravel

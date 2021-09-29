@@ -46,7 +46,8 @@
                 </div>
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    Hi: {{env('DB_DATABASE')}}
+                    Host: {{env('DB_HOST')}}
+                    Database: {{env('DB_DATABASE')}}
                 </div>
             </div>
         </div>
